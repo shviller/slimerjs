@@ -35,7 +35,8 @@ Properties list:
 :ref:`ownsPages <webpage-ownsPages>` :ref:`pages <webpage-pages>` :ref:`pagesWindowName <webpage-pagesWindowName>`
 :ref:`paperSize <webpage-paperSize>` :ref:`plainText <webpage-plainText>` :ref:`scrollPosition <webpage-scrollPosition>`
 :ref:`settings <webpage-settings>` :ref:`title <webpage-title>` :ref:`url <webpage-url>`
-:ref:`viewportSize <webpage-viewportSize>` :ref:`windowName <webpage-windowName>` :ref:`zoomFactor <webpage-zoomFactor>`
+:ref:`viewportSize <webpage-viewportSize>` :ref:`windowName <webpage-windowName>` :ref:`xulWindow <webpage-xulWindow>`
+:ref:`zoomFactor <webpage-zoomFactor>`
 
 Functions list:
 
@@ -491,6 +492,16 @@ windowName
 
 Contains the name of the window, e.g. the name given to ``window.open()`` if the page
 has been opened with this method.
+
+.. _webpage-xulWindow:
+
+xulWindow
+-----------------------------------------
+
+Contains a reference to the XUL window containing the webpage. It allows to manipulate
+window properties (e.g. `window.title`, shortcuts, etc.).
+
+(SlimerJS only)
 
 .. _webpage-zoomFactor:
 
